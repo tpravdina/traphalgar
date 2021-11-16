@@ -1,0 +1,22 @@
+$white: #ffffff;
+$gray: #7d7987;
+$black: #000000;
+$blue: #458ff6;
+$logo-color: #233348;
+$pink: #feafdd;
+
+$text-size: calc(8px + 1vmin);
+
+$button-width: toEM(200);
+$button-height: toEM(60);
+$burger-size: $button-height * 0.75;
+
+$transition-time: 0.5s;
+$card-border-radius: toEM(20);
+$card-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+
+$header-height: 12vh;
+
+$wide-padding: 10vw;
+$narrow-padding: 0.5 * $wide-padding;
+$column-gap: 2vmax;

@@ -1,0 +1,61 @@
+@import '../../scssHelpers';
+.BurgerMenu {
+  display: none;
+  @include for-mobile {
+    display: block;
+  }
+  &__button {
+    height: $button-height;
+    background: none;
+    border: none;
+    z-index: 100;
+    position: absolute;
+    top: $header-height * 0.7/2;
+    right: $narrow-padding;
+  }
+  &__container {
+    width: 50%;
+    height: 100vh;
+    z-index: 10;
+    background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+    overflow: hidden;
+    transition: height 3s ease;
+    padding: $header-height $narrow-padding;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $white;
+    transition: $transition-time;
+
+    margin: 0;
+    list-style-type: none;
+    @include flex-column(flex-end);
+  }
+  &__overlay {
+    transition: $transition-time;
+    border: none;
+    background-color: $white;
+    opacity: 70%;
+    position: absolute;
+    top: $header-height;
+    right: 0;
+    width: 100%;
+    height: 100vh-$header-height;
+  }
+  &__item {
+    color: $white;
+    white-space: nowrap;
+    line-height: 250%;
+    font-weight: 300;
+  }
+}
+.hidden {
+  width: 0;
+  padding: $header-height 0;
+}
+.zero-opacity {
+  opacity: 0;
+}
+.display-none {
+  display: none;
+}

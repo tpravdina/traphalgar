@@ -1,0 +1,22 @@
+{
+    "articles": [
+        {
+          "id": "61323e6b5cf95da4d9f1f851",
+          "title": "Disease detection, check up in the laboratory",
+          "text": "In this case, the role of the health laboratory is very important to do a disease detection. In this case, the role of the health laboratory is very important to do a disease detection.",
+          "img": "img/articles/img1.jpg"
+        },
+        {
+          "id": "61323e6bcc21016602e61f22",
+          "title": "Herbal medicines that are safe for consumption",
+          "text": "Herbal medicine is very widely used at this time because of its very good for your health. Herbal medicine is very widely used at this time because of its very good for your health.",
+          "img": "img/articles/img2.jpg"
+        },
+        {
+          "id": "61323e6bca63b642ca4352d3",
+          "title": "Disease detection, check up in the laboratory",
+          "text": "A healthy lifestyle should start from now and also for your skin health. There are some tips and tricks for this purpose. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum cumque, quam corrupti, esse inventore quae harum mollitia hic beatae placeat, unde ipsa! Nisi rem quidem enim cumque dolorum corrupti ea!",
+          "img": "img/articles/img3.jpg"
+        }
+    ]
+}

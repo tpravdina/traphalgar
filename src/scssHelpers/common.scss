@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Mulish', sans-serif;
+  color: $gray;
+}
+body {
+  font-size: $text-size;
+  background: $white;
+  @include for-mobile {
+    font-size: calc(12px + 1vmin);
+  }
+}
+.line {
+  border: 1px solid $black;
+  width: toEM(56);
+  margin-top: toEM(26);
+  margin-bottom: toEM(33);
+}
+.illustration {
+  height: 90%;
+  width: 100%;
+  object-fit: contain;
+}

@@ -1,0 +1,16 @@
+@import '../../../scssHelpers';
+.ServiceCard {
+  background: $white;
+  border-radius: $card-border-radius;
+  box-shadow: $card-shadow;
+  padding: toEM(47) toEM(50) toEM(47) toEM(38);
+
+  display: grid;
+  grid-template-rows: 150px auto 1fr;
+  @include for-mobile {
+    grid-template-rows: 50% auto 1fr;
+  }
+  &__img {
+    align-self: center;
+  }
+}

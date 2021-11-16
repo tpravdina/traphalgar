@@ -1,0 +1,32 @@
+@import '../../scssHelpers';
+.TitleWithText {
+  display: grid;
+  &__title {
+    color: $black;
+    font-size: toEM(36);
+    line-height: 156%;
+  }
+  &__line {
+    border: 1px solid $black;
+    width: toEM(56);
+    margin-top: toEM(26);
+    margin-bottom: toEM(33);
+  }
+  &__text {
+    color: $gray;
+    font-size: toEM(18);
+    line-height: 167%;
+  }
+  &--center {
+    justify-items: center;
+    text-align: center;
+  }
+  &--left {
+    justify-items: start;
+    text-align: left;
+  }
+  &--right {
+    justify-items: end;
+    text-align: right;
+  }
+}

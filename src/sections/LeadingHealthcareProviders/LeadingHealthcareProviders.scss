@@ -1,0 +1,14 @@
+@import '../../scssHelpers';
+.LeadingHealthcareProviders {
+  padding: toEM(110) 0 toEM(136) 0;
+  position: relative;
+  overflow-x: hidden;
+  &__dots {
+    position: absolute;
+    right: toEM(-50);
+    bottom: 0;
+    @include for-tablet-and-mobile {
+      display: none;
+    }
+  }
+}

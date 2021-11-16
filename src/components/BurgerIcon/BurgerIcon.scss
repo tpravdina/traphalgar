@@ -1,0 +1,48 @@
+@import '../../scssHelpers';
+$burger-line-height: $burger-size/9;
+.BurgerIcon {
+  position: relative;
+  height: $burger-size;
+  width: $burger-size;
+  &__line {
+    position: absolute;
+    width: 100%;
+    height: $burger-line-height;
+    border-radius: $burger-line-height/2;
+    background-color: $blue;
+    transition: $transition-time;
+  }
+  &__up {
+    top: $burger-line-height;
+    left: 0;
+    transform-origin: top left;
+  }
+  &__middle {
+    top: $burger-size/2 - $burger-line-height/2;
+    right: 0;
+    transform-origin: center;
+  }
+  &__bottom {
+    bottom: $burger-line-height;
+    right: 0;
+    transform-origin: bottom right;
+  }
+  &--cross {
+    .BurgerIcon__line {
+      background-color: $white;
+    }
+    .BurgerIcon__up {
+      top: $burger-line-height * 0.97;
+      left: $burger-line-height * 1.67;
+      transform: rotate(45deg);
+    }
+    .BurgerIcon__middle {
+      transform: rotate(-45deg);
+    }
+    .BurgerIcon__bottom {
+      bottom: $burger-line-height * 0.97;
+      right: $burger-line-height * 1.67;
+      transform: rotate(45deg);
+    }
+  }
+}

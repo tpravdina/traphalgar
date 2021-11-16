@@ -1,0 +1,46 @@
+@import '../../../scssHelpers';
+.ArticleCard {
+  border-radius: $card-border-radius;
+  overflow: hidden;
+  box-shadow: $card-shadow;
+  background: $white;
+  &__img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__container {
+    margin: 0 toEM(33);
+  }
+  &__title {
+  }
+  &__text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  &__button {
+    margin: toEM(25) 0 toEM(35) 0;
+    display: flex;
+    justify-content: center;
+
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: toEM(17);
+    line-height: 165%;
+    color: $blue;
+
+    &__icon.next-arrow {
+      height: toEM(34);
+    }
+
+    &:hover {
+      transition: text-decoration $transition-time;
+      text-decoration: underline;
+    }
+  }
+}

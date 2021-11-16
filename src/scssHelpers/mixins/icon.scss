@@ -1,0 +1,7 @@
+@mixin icon($name, $color, $size) {
+  width: $size;
+  height: $size;
+  background-color: $color;
+  mask: url('../../svg/' + $name + '.svg') no-repeat center / contain;
+  -webkit-mask: url('../../svg/' + $name + '.svg') no-repeat center / contain;
+}

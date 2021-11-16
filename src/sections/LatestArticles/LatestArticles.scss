@@ -1,0 +1,37 @@
+@import '../../scssHelpers';
+.LatestArticles {
+  @include addaptive-padding;
+  @include flex-column(center);
+  position: relative;
+  overflow: hidden;
+  padding-bottom: toEM(200);
+  padding-top: toEM(110);
+  @include for-tablet-and-mobile {
+    padding-bottom: toEM(200);
+    padding-top: toEM(110);
+  }
+  &__articleCardContainer {
+    width: 100%;
+    margin: toEM(70) 0;
+  }
+  &__bgElement {
+    transform: scale(-1, -1);
+    position: absolute;
+    right: -12%;
+    top: 23%;
+    z-index: -10;
+    height: 50%;
+  }
+  &__topDots {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: -10;
+  }
+  &__bottomDots {
+    position: absolute;
+    right: 5%;
+    bottom: -4%;
+    z-index: -10;
+  }
+}

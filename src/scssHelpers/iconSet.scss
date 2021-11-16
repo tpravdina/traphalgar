@@ -1,0 +1,11 @@
+@import './mixins/icon.scss';
+.download-arrow {
+  @include icon('download-arrow', $blue, 0.5 * $button-height);
+}
+.next-arrow {
+  @include icon('next-arrow', $blue, $button-height);
+}
+.prev-arrow {
+  @include icon('next-arrow', $blue, $button-height);
+  transform: scale(-1, 1);
+}

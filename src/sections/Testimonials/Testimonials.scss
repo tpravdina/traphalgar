@@ -1,0 +1,80 @@
+@import '../../scssHelpers';
+.Testimonials {
+  position: relative;
+  @include addaptive-padding;
+  padding-top: toEM(130);
+  padding-bottom: toEM(110);
+  &__container {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+    border-radius: toEM(24);
+    color: $white;
+    @include flex-column(center);
+    padding: toEM(64) toEM(118) toEM(80) toEM(118);
+    @include for-mobile {
+      padding-left: toEM(50);
+      padding-right: toEM(50);
+    }
+  }
+  &__title {
+    color: $white !important;
+    text-align: center;
+  }
+  &__line {
+    border: 1px solid $white !important;
+  }
+  &__slider {
+    width: 100%;
+  }
+  &__sliderNav {
+    margin: toEM(37) auto 0 auto;
+    width: 30%;
+    @include for-mobile {
+      width: 80%;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__pagination {
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__prev,
+    &__next {
+      border: none;
+      background: none;
+    }
+    &__prev .prev-arrow,
+    &__next .next-arrow {
+      background: #b5d2fb;
+      &:hover {
+        transition: $transition-time;
+        background: $blue;
+      }
+    }
+    .swiper-pagination-bullet,
+    .swiper-pagination-bullet-active {
+      background: $blue;
+    }
+  }
+  &__rightDots {
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    z-index: -10;
+    @include for-tablet-and-mobile {
+      display: none;
+    }
+  }
+  &__leftDots {
+    position: absolute;
+    top: toEM(-15);
+    right: toEM(-47);
+    z-index: 10;
+    @include for-tablet-and-mobile {
+      display: none;
+    }
+  }
+}

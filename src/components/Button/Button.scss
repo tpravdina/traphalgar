@@ -1,0 +1,40 @@
+@import '../../scssHelpers';
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  cursor: pointer;
+  transition: $transition-time;
+
+  width: $button-width;
+  height: $button-height;
+  border-radius: 0.5 * $button-height;
+
+  font-weight: bold;
+  &--outlined {
+    border: 1px solid $blue;
+    background: none;
+    color: $blue;
+    .Button__icon {
+      transition: $transition-time;
+      background-color: $blue;
+    }
+    &:hover {
+      @extend .Button--filled;
+    }
+  }
+  &--filled {
+    border: 1px solid $blue;
+    background: $blue;
+    color: $white;
+    .Button__icon {
+      transition: $transition-time;
+      background-color: $white;
+    }
+    &:hover {
+      @extend .Button--outlined;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.title {
+  font-weight: bold;
+  font-size: toEM(36);
+  line-height: 156%;
+  color: $black;
+}
+.text {
+  color: $gray;
+  font-size: toEM(18);
+  line-height: 167%;
+}
+.card-title {
+  margin-top: toEM(24);
+  font-weight: bold;
+  font-size: toEM(21);
+  line-height: 152%;
+  color: $black;
+}
+.card-text {
+  margin-top: toEM(12);
+  font-weight: 300;
+  font-size: toEM(16);
+  line-height: 175%;
+}

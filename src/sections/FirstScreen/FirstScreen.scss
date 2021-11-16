@@ -1,0 +1,49 @@
+@import '../../scssHelpers';
+.FirstScreen {
+  height: auto;
+  max-height: 100vh - $header-height;
+  margin-top: $header-height;
+  padding: toEM(35) toEM(163) 0 toEM(190);
+  @include for-tablet-and-mobile {
+    @include addaptive-padding;
+  }
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-column-gap: 7%;
+  @include for-mobile {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40vh;
+  }
+  &__dots {
+    position: absolute;
+    left: toEM(-50);
+    @include for-tablet-and-mobile {
+      display: none;
+    }
+  }
+  &__container {
+    align-self: center;
+  }
+  &__title {
+    font-size: toEM(48);
+    line-height: 117%;
+    color: $black;
+  }
+  &__text {
+    font-size: toEM(21);
+    line-height: 152%;
+    margin-top: toEM(25);
+  }
+  &__button {
+    margin-top: toEM(48);
+  }
+  &__illustration {
+    height: 90%;
+    width: 100%;
+    object-fit: contain;
+    @include for-mobile {
+      grid-row: 1;
+    }
+  }
+}

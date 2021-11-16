@@ -1,0 +1,85 @@
+@import '../../scssHelpers';
+.Footer {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+  padding: toEM(110) toEM(190);
+  @include for-1400 {
+    padding: toEM(110) $narrow-padding;
+  }
+  @include for-tablet-and-mobile {
+    padding: toEM(110) $narrow-padding;
+  }
+  display: grid;
+  grid-template-columns: 1fr repeat(3, max-content);
+  grid-gap: 7vw;
+  @include for-tablet {
+    grid-gap: 5vw;
+  }
+  @include for-mobile {
+    grid-template-columns: repeat(3, minmax(100px, max-content));
+  }
+  @include for-small-screen {
+    grid-template-columns: 1fr 1fr;
+    background-color: pink;
+    .Footer__dots {
+      display: none;
+    }
+  }
+  & * {
+    color: $white;
+    font-weight: 300;
+  }
+  &__logoBlock {
+    width: 25vw;
+    @include for-tablet {
+      width: 40vw;
+    }
+    @include for-mobile {
+      width: 80vw;
+      grid-row: 1;
+      grid-column: 1 / span 3;
+    }
+    @include for-small-screen {
+      width: 100%;
+      grid-row: 1;
+      grid-column: 1 / span 2;
+    }
+    &__logo {
+      height: toEM(40);
+    }
+    &__text {
+      margin-top: toEM(16);
+      font-size: toEM(18);
+      line-height: 156%;
+    }
+    &__copyright {
+      margin-top: toEM(30);
+      font-size: toEM(16);
+      line-height: 175%;
+    }
+  }
+  &__list {
+    &__ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    &__title {
+      font-size: toEM(20);
+      line-height: 300%;
+      font-weight: bold;
+    }
+    &__item {
+      cursor: pointer;
+      font-size: toEM(18);
+      line-height: 211%;
+      text-decoration: none;
+    }
+  }
+  &__dots {
+    position: absolute;
+    left: toEM(-19);
+    bottom: toEM(-19);
+  }
+}

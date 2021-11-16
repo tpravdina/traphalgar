@@ -1,0 +1,42 @@
+@import '../../scssHelpers';
+.Header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: $header-height;
+  z-index: 10;
+  background: $white;
+
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr 40vw;
+  
+  padding: 0 12% 0 12%;
+  @include for-tablet-and-mobile {
+    @include addaptive-padding;
+  }
+  &__logo {
+    height: 80%;
+  }
+  &__navbar {
+    grid-row: 1;
+    grid-column: 3;
+    width: 34vw;
+    justify-self: end;
+    @include for-1400 {
+      width: 50vw;
+    }
+    @include for-tablet {
+      width: 54vw;
+      margin-left: 10vw;
+    }
+    @include for-mobile {
+      display: none;
+    }
+  }
+  &__burger {
+    grid-row: 1;
+    grid-column: 3;
+    justify-self: end;
+  }
+}
